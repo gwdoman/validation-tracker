@@ -13,9 +13,9 @@ Monitors rippled logs and parses out validation events from the network nodes
 All configuration is done via environment variables according to the principles of the [Twelve Factor App](http://12factor.net/)
 
 - RIPPLED_LOG_PATH
-- MONGO_HOST
-- MONGO_PORT
-- MONGO_DATABASE
+- HBASE_HOST
+- HBASE_PORT
+- HBASE_TABLE
 
 ### Optional
 
@@ -31,5 +31,5 @@ To extend the monitor functionality create a subclass of `RippledLogMonitor` and
 override the `onValidation(validation)` method.
 
 By default a single subclass is implemented in `monitor.js` which writes each validation
-to a MongoDB document database configured via the above environment variables
+to an Hbase database configured via the above environment variables
 

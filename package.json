@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Monitors rippled logs for validation events",
   "scripts": {
-    "start": "babel-node monitor.js",
-    "test-mongo": "babel-node test/mongo-validation.js"
+    "start": "babel-node monitor.js"
   },
   "dependencies": {
     "async": "^0.9.0",
@@ -13,10 +12,7 @@
     "body-parser": "^1.9.2",
     "express": "^4.10.2",
     "hbase": "^0.1.7",
-    "hbase-client": "^1.2.0",
-    "jade": "^1.7.0",
     "moment": "^2.8.3",
-    "mongoose": "^4.0.0",
     "node-statsd": "^0.1.1"
   }
 }
